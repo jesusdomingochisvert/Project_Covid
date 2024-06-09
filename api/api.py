@@ -7,7 +7,7 @@ response = requests.get(url)
 
 if response.status_code == 200:
     data = response.json()
-    with open('data_covid.json', 'w') as file:
+    with open('../data/data_covid.json', 'w') as file:
         json.dump(data, file)
     print("Datos guardados exitosamente.")
 else:

@@ -1,4 +1,4 @@
-ID_ciudad,id,nombre_ciudad,coordenadas
+id_ciudad,id,nombre_ciudad,coordenadas
 1,1,Madrid,"40.416775,-3.703790"
 2,1,Barcelona,"41.385064,2.173404"
 3,1,Valencia,"39.469907,-0.376288"
