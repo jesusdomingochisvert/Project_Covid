@@ -5,7 +5,7 @@ from datetime import datetime
 
 from pyspark.sql.types import DoubleType, IntegerType, LongType
 
-spark = SparkSession.builder.appName("Process Data COVID").getOrCreate()
+spark = SparkSession.builder.appName("Generated Data COVID").getOrCreate()
 
 df = spark.read.json('data/data_covid.json')
 
@@ -58,6 +58,6 @@ tabla_final = expanded_df.drop('multiplier', 'copy_id')
 
 final = tabla_final.toPandas()
 
-final.to_parquet("process_data/data_covid.parquet")
+final.to_parquet("generated_data/data_covid.parquet")
 
 spark.stop()
